@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>mi sitio</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+    <script src="script.js"></script>
+</head>
+ <style>
+        body {
+            font-family: cursive;
+            margin: 0;
+            padding: 0;
+            background-color: beige;
+            color:#c69c6d;
+            
+            
+        }
+
+        .encabezado {
+            background-color: #333;
+            padding: 15px;
+            text-align: center;
+            color: #c69c6d;
+            display: flex;
+            justify-content: space-between; /* Ajuste importante */
+            align-items: center;
+           
+
+        }
+
+        .logo h1 {
+            margin: 0;
+            
+        }
+
+        .menu {
+            display: flex;
+        }
+
+        .menu ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .menu li {
+            margin: 0 15px;
+        }
+
+        .menu a {
+            text-decoration: none;
+            color:#c69c6d;
+            font-weight: bold;
+            text-shadow: 1px 1px 1px;
+        }
+
+        .menu a:hover {
+            background-color: #555;
+        }
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        @media screen and (max-width: 768px) {
+            .menu {
+                display: none;
+            }
+
+            .menu.show {
+                display: flex;
+                flex-direction: column; /* Ajuste importante */
+                position: fixed;
+                top: 60px;
+                right: 0;
+                width: 100%;
+                background-color: #444;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+
+            .menu a {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                margin: 5px;
+                border-radius: 5px;
+                transition: background-color 0.3s;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<body>
+    <header class="encabezado">
+    <div class="logo">
+        <h1>LOGO</h1>
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="#">INICIO</a></li>
+            <li><a href="#">MAS INFORMACION</a></li>
+            <li><a href="#">CONTACTO</a></li>
+        </ul>
+    </div>
+    <span class="menu-icon" onclick="toggleNav()">☰</span>
+</header>
+
+<script>
+    function toggleNav() {
+        var menu = document.querySelector('.menu');
+        menu.classList.toggle('show');
+    }
+</script>
+
+<br>
+<br>
+    <main >
+        
+        <div class="cuerpo1">
+            
+            <img src="img/RIASCOS JULIO CESAR.jpg" title="Julio Cesar">
+            <h3>Sobre Mi</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum alias explicabo fugiat velit non quo earum, impedit minus quos expedita officiis vitae labore suscipit voluptate eveniet culpa beatae laudantium animi!</p>
+        </div>
+       <div class="cuerpo2">
+        <div>
+            <h6>Titulo 1</h6>
+            <img src="img/RIASCOS JULIO CESAR.jpg" title="Julio Cesar">
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum alias explicabo fugiat velit non quo earum, impedit minus quos expedita officiis vitae labore suscipit voluptate eveniet culpa beatae laudantium animi!</p>
+        </div>
+        <div>
+            <h6>Titulo 1</h6>
+            <img src="img/RIASCOS JULIO CESAR.jpg" title="Julio Cesar">
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum alias explicabo fugiat velit non quo earum, impedit minus quos expedita officiis vitae labore suscipit voluptate eveniet culpa beatae laudantium animi!</p>
+        </div>
+        <div>
+            <h6>Titulo 1</h6>
+            <img src="img/RIASCOS JULIO CESAR.jpg" title="Julio Cesar">
+            
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum alias explicabo fugiat velit non quo earum, impedit minus quos expedita officiis vitae labore suscipit voluptate eveniet culpa beatae laudantium animi!</p>
+        </div>
+       </div>
+    </main>
+
+    <br>
+    <br>
+    
+    <footer class="form-header">
+        <h1>Contacto</h1>
+        <p><em>¡Esperamos tu consulta!</em></p>
+  
+        <form action="" method="get" class="formulario" id="form"><div class="form-row">
+          <label for="nombre">Nombre</label>
+          <input id="nombre" name="nombre" type="text" />
+        </div>
+  
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input
+            id="email"
+            name="email"
+            type="email"
+            placeholder="pepe@gmail.com"
+          />
+        </div>
+        <div class="form-row">
+          <label for="mensaje">Mensaje</label>
+          <textarea id="mensaje" name="mensaje"></textarea>
+        </div>
+        <div class="form-row">
+          <button>Enviar</button>
+        </div>
+       </form>
+       
+      
+      
+      
+      </footer>
+
+    <footer>
+        <h4>Redes sociales</h4>
+        <div class="piedepagina">
+            <a href="#"> <img src="img/danna.jpg"> </a>
+            <a href="#"> <img src="img/danna.jpg"> </a>
+            <a href="#"> <img src="img/danna.jpg"> </a>
+        </div>
+    </footer>
+    
+</body>
+</html>
