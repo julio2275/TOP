@@ -1,0 +1,10 @@
+.clase {color: red;
+	font-size: 40px;
+
+}
+
+@media (max-width:767px) {
+	.clase {color: blue;
+	font-size: 20px;}
+
+
